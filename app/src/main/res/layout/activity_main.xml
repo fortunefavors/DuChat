@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".ui.activity.MainActivity">
+        <!--    <com.google.android.material.tabs.TabLayout-->
+        <!--        android:id="@+id/tabs"-->
+        <!--        style="@style/MyTablayoutstyle"-->
+        <!--        android:background="@color/white_70"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="@dimen/dialing_float_height"/>-->
+
+        <!--    <androidx.viewpager.widget.ViewPager-->
+        <!--        android:id="@+id/view_pager"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+        <!--        android:layout_marginTop="@dimen/dialing_float_height"/>-->
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialing_float_height"
+            android:orientation="horizontal">
+
+            <com.baidu.iov.duchat.ui.view.TabView
+                android:id="@+id/tab1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tab_text_1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tab_textSize"
+                app:isChosen="true"/>
+
+            <com.baidu.iov.duchat.ui.view.TabView
+                android:id="@+id/tab2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tab_text_2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tab_textSize" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_layout"/>
+        <androidx.fragment.app.FragmentContainerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</layout>

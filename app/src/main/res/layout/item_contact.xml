@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/contact_width"
+    android:layout_height="@dimen/contact_height"
+    android:layout_marginRight="48dp"
+    android:background="@drawable/contact_bg">
+
+    <TextView
+        android:id="@+id/tv_item_bt"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_width"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@color/black_70"
+        android:text="1"
+        android:textSize="@dimen/num_TextSize"
+        android:textColor="@color/white"/>
+
+    <com.baidu.iov.duchat.ui.view.CircleImageView
+        android:id="@+id/portrait"
+        android:layout_width="@dimen/portrait_width"
+        android:layout_height="@dimen/portrait_width"
+        android:src="@drawable/head"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="53dp"/>
+
+    <ImageView
+        android:layout_width="@dimen/portrait_width"
+        android:layout_height="wrap_content"
+        android:src="@drawable/device_mask"
+        app:layout_constraintLeft_toLeftOf="@id/portrait"
+        app:layout_constraintBottom_toBottomOf="@id/portrait" />
+
+
+    <ImageView
+        android:id="@+id/device_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phone_device"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintLeft_toLeftOf="@id/portrait"
+        app:layout_constraintBottom_toBottomOf="@id/portrait"
+        app:layout_constraintRight_toRightOf="@id/portrait"/>
+
+    <TextView
+        android:id="@+id/nick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        app:layout_constraintTop_toBottomOf="@id/portrait"
+        app:layout_constraintLeft_toLeftOf="@id/portrait"
+        app:layout_constraintRight_toRightOf="@id/portrait"
+        android:text="大佬"
+        android:textSize="@dimen/name_TextSize"
+        android:textColor="@color/white" />
+</androidx.constraintlayout.widget.ConstraintLayout>

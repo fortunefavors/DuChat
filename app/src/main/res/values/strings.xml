@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DuChat</string>
+    <string name="tab_text_1">家庭圈</string>
+    <string name="tab_text_2">通话记录</string>
+
+    <string name="privacy_policy_title">隐私协议</string>
+    <string name="policy_confirm">我已阅读</string>
+    <string name="policy_deny">退出协议</string>
+    <string name="refresh">刷新</string>
+    <string name="privacy_policy">使用“度聊”功能，您需要登录您的百度账号以及将您在此账号下的通讯录、本车机下的
+        通话记录等信息同步至车机。此外，在使用本功能时，请您注意遵守我国交通及道路法律法规，确保行车安全，避免给您及
+        第三人造成损害；如果因为您违反法律法规而导致百度或任何第三方遭受损害，引起任何和全部索赔、请求、损失、责任和
+        费用，您将自行承担因此产生的全部后果和损失。</string>
+
+
+    <string name="load_error">加载失败，请检查网络后重试</string>
+    <string name="family_title">请在手机【小度】APP上管理家庭圈：我的小度号：</string>
+    <string name="my_xiaodu_num">我的小度号：%s</string>
+    <string name="connect_waiting">正在等待对方接受邀请...</string>
+</resources>
